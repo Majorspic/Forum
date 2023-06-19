@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../Inter.ttf');
+}
+
+*{
+    font-family: Inter;
+}
+
+
+#comment-case{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FAFAFA ;
+    border-radius: 25px;
+    width: 60%;
+    
+    margin-top: 30px
+}
+
+#information-top-comment{
+
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+#username-comment{
+    font-size:0.8em;
+    font-weight: 600;
+}
+
+
+#decoration-line-comment{
+    width: 90%;
+    height: 20px;
+    border-bottom:1px solid rgba(50, 50, 50, 0.358) ; 
+    margin-bottom : 30px;
+}
+
+
+#comment-content{
+    width: 90%;
+    margin-bottom: 50px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    font-size: 0.8em;
+}
+
+#reaction-case-comment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 95%;
+    
+
+}
+
+#left-side-reaction-comment{
+    display: flex;
+    align-items: center;
+}
+
+.reaction-section-comment{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+
+    
+}
+
+#reaction-case-comment img{
+    width: auto;
+    height: 18px;
+    margin-right: 10px;
+
+}
+
+
+.red-thumb{
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1000px) {
+   
+
+    #comment-case{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #username-comment{
+        font-size:0.7em;
+    }
+    
+    
+    
+    #category{
+        font-size:0.6em;
+    }
+
+    
+
+    
+    .reaction-section-comment{
+
+        margin: 15px;
+    
+        
+    }
+    
+    #reaction-case-comment img{
+        width: auto;
+        height: 18px;
+        margin-right: 8px;
+    
+    }
+}
+
+@media only screen and (max-width: 700px) {
+   
+    #post-content-comment{
+        font-size:0.9em ;
+    }
+    
+    #reaction-case{
+        height: 30px;
+    }
+
+
+    .reaction-section-comment{
+        font-size: 0.9em;
+        margin: 15px;
+    
+        
+    }
+    
+    #reaction-case img{
+        width: auto;
+        height: 12px;
+        margin-right: 8px;
+    
+    }
+}

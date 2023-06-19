@@ -1,0 +1,35 @@
+{{define "popup"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/popup.css" />
+</head>
+<div id="blurry-background">
+</div>
+    <div id="popup">
+        <div id="popup-inset">
+            <div id="close">
+                <div class="close-line close-line-1"></div>
+                <div class="close-line close-line-2"></div>
+            </div>
+            <div id="popup-title">
+                <div id="black-part">Bienvenue sur </div>
+                <div id="green-part">Toxic</div>
+            </div>
+            <div id="popup-line"></div>
+            <div id="popup-first-text">Bienvenue à vous, si vous ne connaissez pas encore ce forum. 
+                le but est de mettre en avant 
+                                les défauts ou les opinions impopulaires sur les jeux vidéo de la communauté.</div>
+            <img src="../static/images/warning_logo.png" id="warning-logo">
+            <div id="popup-second-text">Même si vos opinions divergent, il est 
+                impératif que le débat se déroule dans le respect. Aucune insulte
+                aucune insulte, menace ou harcèlement ne sera toléré.</div>
+        </div>
+    </div>
+    <script src="../static/js/popup.js"></script>
+</html>
+
+{{end}}

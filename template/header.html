@@ -1,0 +1,56 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/header.css" />
+</head>
+    <header>
+        <div id="bandeau">
+            <a href="/">
+                <img src="../static/images/logo_toxic.png" id="logo">
+            </a>
+
+            <div id="interactions-header">
+                <a href="/createPost">
+                    <div id="add-post">
+                        <div class="line l1"></div>
+                        <div class="line l2"></div>
+                    </div>
+                </a>
+                <a href="/profil" id="user-button" >
+                    <img src="../static/images/user.png" id="user">
+                </a>
+                
+            </div>
+        </div>
+        <button type="button" aria-label="toggle curtain navigation"
+             class ="nav-toggler">
+                <span class="burger b1"></span>
+                <span class="burger b2"></span>
+                <span class="burger b3"></span>
+        </button>
+        <div id="tag-column">
+            <div id="tag-list">
+                <div id="title-tag">Topics Impopulaire</div>
+                <ul>
+                    <li><a href="">Valorant</a></li>
+                    <li><a href="">League of Legend</a></li>
+                    <li><a href="">Minecraft</a></li>
+                    <li><a href="">Fornite</a></li>
+                    <li><a href="">Apex Legend</a></li>
+                    <li><a href="">Overwatch</a></li>
+                </ul>
+            </div>
+            <div id="center-button">
+                <a href="/login">
+                    <div class="sign-in-button"> Se connecter</div>
+                </a>
+             </div>
+        </div>
+        <script src="../static/js/header.js"></script>
+    </header>
+</html> 
+{{end}}

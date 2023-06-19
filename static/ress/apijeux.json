@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "general"
+    },
+    {
+        "id": 2,
+        "name": "valorant"
+    },
+    {
+        "id": 3,
+        "name": "counter strike"
+    },
+    {
+        "id": 4,
+        "name": "league of legends"
+    },
+    {
+        "id": 5,
+        "name": "diablo 4"
+    },
+    {
+        "id": 6,
+        "name": "apex legends"
+    },
+    {
+        "id": 7,
+        "name": "overwatch"
+    },
+    {
+        "id": 8,
+        "name": "rocket league"
+    },
+    {
+        "id": 9,
+        "name": "warframe"
+    },
+    {
+        "id": 10,
+        "name": "assassin's creed"
+    }
+]

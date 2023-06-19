@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter.ttf');
+}
+
+*{
+    font-family: Inter;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#bandeau{
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    background-color: #FAFAFA;
+    border-bottom: rgba(50, 50, 50, 0.358) 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+}
+
+#logo{
+    margin-left: 8vw;
+    height: 60px;
+    width: auto;
+}
+
+#interactions-header{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#add-post{
+    
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border : 3px solid black;
+    margin-right: 40px;
+}
+
+
+
+.line{
+    position: relative;
+    width: 4px;
+    height: 16px;
+    background-color: black;
+}
+
+.l1{
+   left: 11px;
+   top:5px;
+}
+
+.l2{
+    transform: rotate(90deg);
+    bottom:11px;
+    left:11px;
+}
+
+#user{
+    height: 30px;
+    width: auto;
+}
+
+#tag-column{
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 100vh;
+    width: 20vw;
+    max-width: 360px;
+    min-width: 180px;
+    background-color:#FAFAFA;
+    border-right: rgba(50, 50, 50, 0.358) 1px solid;
+  
+}
+
+#tag-list{
+    margin-top:40px;
+    padding-left: 10px;
+}
+
+#tag-list ul{
+    
+    list-style-type: none;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.2em;
+    
+
+}
+
+#tag-list li{
+    padding-top: 10px;
+}
+
+#tag-list li a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+.nav-toggler{
+    position : fixed;
+    z-index : 10;
+    top : 70px;
+    left: 30px;
+    height: 10px;
+    width: 20px;
+    border-radius: 50%;
+    border : none;
+    outline : none;
+    cursor : pointer;
+    background: transparent ;
+    display: none;
+}
+
+.burger{
+    position : absolute;
+ display: block;
+ width : 100%;
+ height : 2px;
+ background: black;
+ transition: transform 0.3s ease-out,
+ opacity 0.1s ease-out,
+ background 0.3s ease-out,
+ width 0.1s ease-out,
+ height 0.1s ease-out;
+ 
+ }
+ 
+ .b1{
+     transform: translateY(-5px) ;
+ }
+ 
+ .b3{
+     transform: translateY(5px) ;
+ }
+ 
+
+#title-tag{
+    font-size: 1.5em;
+    font-family: Inter;
+    font-weight: 700;
+    padding-bottom:20px;
+    width: 80%;
+    color:rgba(50, 50, 50, 0.358);
+    border-bottom:1px solid rgba(50, 50, 50, 0.358) ;
+}
+
+#center-button{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+}
+
+#center-button a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: Inter;
+    font-weight: 700;
+    color:#FAFAFA;
+}
+.sign-in-button{
+    
+    text-align: center;
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: #4ECC52;
+    border-radius: 25px;
+    margin-top:10%;
+    
+}
+
+
+
+@media only screen and (min-width: 1800px) {
+    #title-tag{
+        font-size: 1.7em;
+        font-weight: 700;
+    }
+
+    #tag-list ul{
+        font-weight: 700;
+        font-size: 1.4em;
+        
+    
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #bandeau{
+        height: 50px;
+    }
+    
+    #logo{
+        height: 40px;
+        margin-left: 4vw
+    }
+    #add-post{
+    
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        border : 3px solid black;
+        margin-right: 40px;
+    }
+    
+    .line{
+        width: 4px;
+        height: 14px;
+        
+    }
+    
+    .l1{
+       left: 10px;
+       top:5px;
+    }
+    
+    .l2{
+        bottom:9px;
+        left:10px;
+    }
+    
+    #user{
+        height: 25px;
+        width: auto;
+    }
+
+    #tag-column{
+        transform: translateX(-110%);
+        transition : transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    }
+
+    #tag-column.active{
+        transform : translate(0);
+    }
+
+    .sign-in-button{
+        font-size: 0.9em ;
+        padding: 7px;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    #center-button a{
+        font-size: 1em;
+    }
+
+    .nav-toggler{
+        left: 4vw;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-toggler.active .burger{
+        background: #090721;
+        width: 80%;
+        height: 3px;
+    }
+    
+    .nav-toggler.active .b1 {
+        transform: translateY(0px) rotate(135deg);
+    }
+    
+    .nav-toggler.nav-toggler.active .b2{
+        opacity: 0;
+    }
+    
+    .nav-toggler.active .b3 {
+        transform: translateY(0px) rotate(-135deg);
+    }
+}
+

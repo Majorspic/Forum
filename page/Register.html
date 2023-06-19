@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/register.css" />
+
+	<title>Toxic</title>
+</head>
+<body>
+	<div id="window">
+		<div id="left-side">
+			<div id="register-title">S'enregister</div>
+			<div id="welcome-title">
+				<div id="left-side-title">Bienvenue sur </div>
+				<div id="right-side-title">Toxic</div>
+			</div>
+			<div id="other-connexion">
+				<a href="/Hlogin">
+					<div id="google-connexion">
+						<img src="../static/images/google-logo.png" alt="">
+						S'enregister avec Google
+					</div>
+				</a>
+				<a href="/github/login">
+					<div id="github-connexion">
+						<img src="../static/images/github-logo.png" alt="">
+						S'enregister avec Github
+					</div>
+				</a>
+			</div>
+	
+			<a id="redirection-link" href="/login"> Déjà inscrit? Connectez vous ici ! </a>
+
+		</div>
+		<div id="right-side">
+			<form action="/submit-form" method="post" onsubmit="return validateForm()" id="form">
+				<div class="label-case">
+					<label for="Mail">Mail</label>
+					<input type="email" id="Mail" name="Mail" class="input-case">
+				</div>
+				<div class="label-case">
+					<label for="Username">Pseudo</label>
+					<input type="text" id="Username" name="Username" class="input-case">
+				</div>
+				<div class="label-case">
+					<label for="Password">Mot de passe</label>
+					<input type="password" id="Password" name="Password" class="input-case">
+				</div>
+				<div class="label-case">
+					<label for="Confirm password">Confirmer le mot de passe</label>
+					<input type="password" id="Confirm password" name="Confirm password" class="input-case">
+				</div>
+				<input type="submit" value="S'enregister" id="register-button">
+			</form>
+		</div>
+	</div>
+	<script src="/static/js/Register.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/profilPage.css" />
+    <title>Toxic</title>
+</head>
+<body>
+    {{template "header"}}
+    <div id="main-stage">
+        <div class="fill">
+            <div id="main-case">
+    
+                <div id="username-title">Username</div>
+            
+                <div id="information-case">
+                    <div id="left-side">
+                        <div id="personal-information">
+                            <div id="personal-information-title">Information du compte :</div>
+                            <div id="information">
+                                <div id="Mail">Mail : test@email.com</div>
+                                <div id="Username">Nom : Username</div>
+                                <div id="change-username">Changer le pseudo</div>
+                                <div id="change-password">Changer le mot de passe</div>
+                            </div>
+                        </div>
+                        <div id="last-post">
+                            <div id="last-post-title">Dernier post :</div>
+                            <div class="last-post-case">
+                                <div class="top-side-post"> 
+                                    <div class="post-title">LOL Ca pue du cul</div>
+                                    <div class="post-category">League of Legend</div>
+                                </div>
+                                <div class="post">Lorem ipsum dolor sit amet consectetur, 
+                                    adipisicing elit. Sequi amet non labore molestiae animi error
+                                    ..
+                                    </div>
+                                    <div class="bottom-side-post"> 
+                                        <div class="post-link"><a href="/Post">more</a></div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="right-side">
+                        <div id="liked-post">
+                            <div id="liked-post-title">Derniers posts aimés :</div>
+                            {{template "likedPost"}}
+                            {{template "likedPost"}}
+                            {{template "likedPost"}}
+                            {{template "likedPost"}}
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blurry-background">
+    </div>
+        <div id="popup-change-password">
+            <div class="popup-inset">
+                <div class="close">
+                    <div class="close-line close-line-1"></div>
+                    <div class="close-line close-line-2"></div>
+                </div>
+                <div class="popup-title">Changer le mot de passe</div>
+                <form action="" method="post" onsubmit="return changePass()">
+              
+                    <div class="label-case">
+                        <label for="password">Nouveau mot de passe:</label>
+                        <input type="password" id="password" name="password" class="input-case" required>
+                    </div>
+                    <input type="submit" value="Enregistrer" id="password-change" class="button">
+                </form>
+            </div>
+        </div>
+        <div id="popup-change-username">
+            <div class="popup-inset">
+                <div class="close">
+                    <div class="close-line close-line-1"></div>
+                    <div class="close-line close-line-2"></div>
+                </div>
+                <div class="popup-title">Changer le pseudo</div>
+                <form action="" method="post" onsubmit="return changeIdent()">
+              
+                    <div class="label-case">
+                        <label for="username">Pseudo</label>
+                        <input type="text" id="username" name="username" class="input-case">
+                    </div>
+                    <input type="submit" value="Enregistrer" id="password-change" class="button">
+                </form>
+            </div>
+        </div>
+        <script src="../static/js/profilPage.js"></script>
+</body>
+</html>

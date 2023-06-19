@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css" />
+    <title>Toxic</title>
+</head>
+<body>
+    <div id="window">
+        <div id="title-part">
+            <div id="title">Se connecter</div>
+            <div id="decoration-bar"></div>
+        </div>
+        <div id="other-connexion">
+            <a href="/Hlogin">
+                <div id="google-connexion">
+                    <img src="../static/images/google-logo.png" alt="">
+                    Se connecter avec Google
+                </div>
+            </a>
+            <a href="/github/login">
+                <div id="github-connexion">
+                    <img src="../static/images/github-logo.png" alt="">
+                    Se connecter avec Github
+                </div>
+            </a>
+        </div>
+        <form action="/submit-form" method="post" onsubmit="return validateLogin()">
+            <div class="label-case">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" class="input-case" required>
+            </div>
+            <div class="label-case">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" class="input-case" required>
+            </div>
+            <a id="redirect-register" href="Register">Pas encore inscrit? Fait le ici!</a>
+            <input type="submit" value="Se connecter" id="connexion-button">
+        </form>
+    </div>
+    <a href="/">
+        <img src="../static/images/black-arrow.png" alt="black-arrow" id="black-arrow">
+    </a>
+	<script src="/static/js/Login.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter.ttf');
+}
+
+*{
+    font-family: Inter;
+}
+
+
+html{
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0
+    ;
+}
+
+
+
+
+#main-stage{
+    height: 100vh;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding-top: 120px;
+     background-color: #EBEBEB;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-create-post{
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+#title-category{
+    display: flex;
+    margin-bottom: 70px;
+}
+textarea{
+    resize: none;
+    width: 70%;
+    height: 100px;
+}
+
+#post-button{
+    color: #FAFAFA;
+    font-weight: 700;
+    height: 40px;
+    width:200px;  
+    font-size: 1.1em; 
+    background-color: #4ECC52;
+    border-radius: 25px;
+    margin-top:7%;
+    border: none;
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .fill{
+        width: 100%;
+    }
+   
+}
+
+@media only screen and (max-width: 700px) {
+    .fill{
+        width: 100%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #title-create-post{
+        font-size: 1.6em;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    #title-category{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    textarea{
+        resize: none;
+        width: 100%;
+        height: 70px;
+    }
+    
+    #post-button{
+        color: #FAFAFA;
+        font-weight: 700;
+        height: 30px;
+        width:200px;  
+        font-size: 1em; 
+        background-color: #4ECC52;
+        border-radius: 25px;
+        margin-top:7%;
+        border: none;
+    
+    
+    }
+   
+}

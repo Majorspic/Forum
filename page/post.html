@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/post.css" />
+    <title>Toxic</title>
+</head>
+<body>
+    {{template "header"}}
+    <div id="main">
+        <div id="fill">
+            
+            <div id="post-case">
+                <div id="information-top-post">
+                    <div id="username">@Pablo</div>
+                    <div id="post-title">Test</div>
+                    <div id="category">League of Legend</div>
+                </div>
+                <div id="decoration-line"></div>
+                <div id="post-content">Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Modi animi ullam fugiat
+                    culpa nesciunt laboriosam molestiae laborum similique?
+                    Ipsum deserunt eveniet sit culpa reprehenderit, 
+                    libero voluptatem dolorem repellendus suscipit officiis
+                    odio. Fugit molestias sint veritatis, minima facere at
+                    mollitia, vel similique, delectus aperiam corrupti 
+                    dolorum libero dolore? Repellat minima excepturi odio 
+                    porro eos fugit quam distinctio fugiat, facere, delectus
+                     at a nam dolor est! Eum quae sed, sapiente a, expedita 
+                     cupiditate commodi perferendis nobis dolorem esse ad. Laudantium 
+                     quidem vel, reiciendis expedita doloribus, laboriosam minus ex, ducimus
+                      consequuntur officiis dolorem? Eveniet sit nihil eius. Minima ullam
+                       corporis dolorum veritatis aliquid!
+                </div>
+            </div>  
+            <div id="reaction-case">
+                <div id="left-side-reaction">
+                    <div class="reaction-section">
+                        <img src="../static/images/grey-toxic-logo-button.png" alt="" class="toxic-logo">
+                        <div id="toxic-nbr">11</div>
+                    </div>
+                    <div class="reaction-section">
+                        <img src="../static/images/greythumb-up-logo.png" alt="" class="red-thumb">
+                        <div id="red-thumb-nbr">11</div>
+                    </div>
+                    <div class="reaction-section">
+                        <img src="../static/images/comment-logo.png" alt="" class="comment-logo">
+                        <div id="comment-nbr">11</div>
+                    </div>
+                </div>
+               
+                <img src="../static/images/share-logo.png" alt="">
+            </div>
+            {{template "comment"}}
+            {{template "comment"}}
+            {{template "comment"}}
+            {{template "comment"}}
+        </div>
+    </div>
+    <div id="comment-popup">
+        <div id="close">
+            <div class="close-line close-line-1"></div>
+            <div class="close-line close-line-2"></div>
+        </div>
+        <div id="comment-popup-title">Commenter</div>
+        <textarea name="comment-area" id="comment-area" cols="30" rows="10"></textarea>
+        <div id="button-comment">
+            Envoyer  
+        </div>
+    </div>
+    <script src="../static/js/post.js"></script>
+</body>
+
+</html>
+<svg xmlns="http://www.w3.org/2000/svg"><filter id="svgTintToxic"><feColorMatrix type="matrix" values="0.054901960784313725 0.054901960784313725 0.054901960784313725  0 0 0.8666666666666667 0.8666666666666667 0.8666666666666667  0 0 0.14901960784313725 0.14901960784313725 0.14901960784313725  0 0  0 0 0 1 0" /></filter></svg>
+<svg xmlns="http://www.w3.org/2000/svg"><filter id="svgTintRedThumb"><feColorMatrix type="matrix" values="0.9372549019607843 0.9372549019607843 0.9372549019607843  0 0 0.023529411764705882 0.023529411764705882 0.023529411764705882  0 0 0.023529411764705882 0.023529411764705882 0.023529411764705882  0 0  0 0 0 1 0" /></filter></svg>

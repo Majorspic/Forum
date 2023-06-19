@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter.ttf');
+}
+
+*{
+    font-family: Inter;
+}
+
+#blurry-background{
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    position:fixed;
+    filter: blur(10px);
+    background-color:rgba(235, 235, 235, 0.853);
+    display:none;
+}
+
+
+#popup{
+    position: fixed;
+  
+    z-index: 13;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: #FAFAFA;
+    border-radius: 25px;
+    display:none;
+}
+
+#popup-inset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px;
+}
+#popup-title{
+    display:flex;
+    justify-content: center;
+}
+
+#warning-logo{
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#close{
+    align-self: flex-start;
+}
+
+#close:hover .close-line{
+    background-color: #817f7f
+}
+
+.close-line{
+    position: relative;
+    width: 4px;
+    height: 18px;
+    background-color: #A4A4A4;
+}
+
+.close-line-1{
+    transform: rotate(-45deg);
+    
+}
+
+.close-line-2{
+    transform: rotate(45deg);
+    top:-18px;
+}
+
+#popup-title{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#green-part{
+    color: #4ECC52;
+    margin-left: 6px;
+}
+
+#popup-line{
+    
+    width: 70%;
+    height: 10px;
+    border-bottom:1px solid rgba(50, 50, 50, 0.358) ;
+    margin-bottom: 40px;
+}
+
+#popup-first-text{
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+#popup-second-text{
+    font-size: 0.9em;
+    font-weight: 800;
+    color: #FF494D;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #popup{
+        width: 350px;
+        height:300px;
+    }
+
+    #popup-inset{
+        margin: 10px;
+    }
+
+    #warning-logo{
+        width: 30px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #popup-title{
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+    #popup-first-text{
+        font-size: 0.7em;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    
+    #popup-second-text{
+        font-size: 0.6em;
+        font-weight: 700;
+        color: #FF494D;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

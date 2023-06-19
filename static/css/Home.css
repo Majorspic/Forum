@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter.ttf');
+}
+
+*{
+    font-family: Inter;
+}
+
+
+html{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0
+    ;
+}
+
+
+
+
+#main-stage{
+    height: 100vh;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding-top: 120px;
+     background-color: #EBEBEB;
+}
+
+#forum-search-post{
+    background-color: #FAFAFA;
+    border-radius: 25px;
+    width: 400px;
+    height: 40px;
+    border: 1px rgba(50, 50, 50, 0.358) solid;
+    
+}
+
+#term_key{
+    background-color: #FAFAFA;
+    border-radius: 25px;
+    width: 150px;
+    height: 30px;
+    border: 1px rgba(50, 50, 50, 0.358) solid;
+   
+}
+
+#forum-search-category{
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    border: 1px rgba(50, 50, 50, 0.358) solid;
+    margin-bottom: 70px;
+    
+}
+
+.case{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 120px;
+    background-color: #FAFAFA;
+    padding-bottom:2%;
+    border-radius: 20px;
+}
+
+
+
+.top-side-post{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.post{
+    width: 80%;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.bottom-side-post{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 10px;
+    
+    
+}
+
+.post-toxicity{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.post-toxicity img{
+    width: 18px;
+    height: auto;
+    margin-right: 3px;
+    
+}
+
+.decoration-bar{
+    width: 40%;
+    height: 100%;
+    border-top:1px solid rgba(50, 50, 50, 0.358) ;
+}
+
+.post-link a{
+    font-size: 0.8em;
+    font-weight: 600;
+    color:#4BAFE8;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1500px) {
+    .case{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .fill{
+        width: 100%;
+    }
+    #forum-search-post{
+      
+        border-radius: 20px;
+        width: 300px;
+        height: 30px;
+      
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .case{
+        height: 180px;
+    }
+}
